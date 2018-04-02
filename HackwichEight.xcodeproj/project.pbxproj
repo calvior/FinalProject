@@ -12,6 +12,7 @@
 		7FAA18882072BFDC0041BAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAA18862072BFDC0041BAE6 /* Main.storyboard */; };
 		7FAA188A2072BFDC0041BAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FAA18892072BFDC0041BAE6 /* Assets.xcassets */; };
 		7FAA188D2072BFDC0041BAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAA188B2072BFDC0041BAE6 /* LaunchScreen.storyboard */; };
+		7FAA18952072C5020041BAE6 /* Resturant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAA18942072C5020041BAE6 /* Resturant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7FAA18892072BFDC0041BAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FAA188C2072BFDC0041BAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FAA188E2072BFDC0041BAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FAA18942072C5020041BAE6 /* Resturant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resturant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				7FAA18822072BFDC0041BAE6 /* AppDelegate.swift */,
 				7FAA18842072BFDC0041BAE6 /* ViewController.swift */,
 				7FAA18862072BFDC0041BAE6 /* Main.storyboard */,
+				7FAA18942072C5020041BAE6 /* Resturant.swift */,
 				7FAA18892072BFDC0041BAE6 /* Assets.xcassets */,
 				7FAA188B2072BFDC0041BAE6 /* LaunchScreen.storyboard */,
 				7FAA188E2072BFDC0041BAE6 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				7FAA18852072BFDC0041BAE6 /* ViewController.swift in Sources */,
 				7FAA18832072BFDC0041BAE6 /* AppDelegate.swift in Sources */,
+				7FAA18952072C5020041BAE6 /* Resturant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

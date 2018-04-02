@@ -14,10 +14,32 @@ class ViewController: UIViewController {
 
 
     @IBOutlet var mapView: MKMapView!
+
+    //set intial location to UHWO
+    let initialLocation = CLLocation (latitude: 21.361888 , longitude: -158.055725)
+
+    //set region around UHWO to 1000m
+    let regionRadius: CLLocationDistance = 1000
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+ 
+        //this function centers the map around the CLLocation by setting the coordinate region and set the region of the map
+        func centerMapOnLocation(location: CLLocation) {
+            let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
+            mapView.setRegion(coordinateRegion, animated: true)
+        }
+     
+        //call centerMapOnLocation function to display the map when it first opens
+        centerMapOnLocation(location: initialLocation)
+        
+        //create an Restaurant object and set all the arguments to each of the three parameters
+        let restaurantOne = Resturant(title: "Kalapawai", type: "Kalapawai", coordinate: CLLocationCoordinate2D(latitude: 21.346470, longitude: -158.080098))
+        mapView.addAnnotation(restaurantOne)
+        
     }
 
     override func didReceiveMemoryWarning() {
