@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HackwichEight" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,14 +26,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="PlF-wd-k10"/>
+                    <navigationItem key="navigationItem" id="Jg7-Of-N1O"/>
                     <connections>
                         <outlet property="mapView" destination="azc-VJ-jvn" id="1kg-c4-CYY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="420" y="367"/>
+            <point key="canvasLocation" x="1099" y="367"/>
         </scene>
         <!--Item-->
         <scene sceneID="w5E-OB-wMK">
@@ -85,13 +85,32 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="IT9-dD-JRO"/>
+                        <segue destination="25t-EP-Y1a" kind="relationship" relationship="viewControllers" id="IT9-dD-JRO"/>
                         <segue destination="uTk-RU-lbK" kind="relationship" relationship="viewControllers" id="4tz-8C-MeH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGW-Ke-shv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-593" y="21"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="0Qx-9d-h8s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="25t-EP-Y1a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="PlF-wd-k10"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sfK-FM-A35">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Okp-BR-PO8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zRA-lW-rib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="367"/>
         </scene>
     </scenes>
 </document>
