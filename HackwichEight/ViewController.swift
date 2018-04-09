@@ -15,6 +15,7 @@ class ViewController: UIViewController {
 
     @IBOutlet var mapView: MKMapView!
 
+    @IBOutlet weak var mapTitleOne: UINavigationItem!
     //set intial location to UHWO
     let initialLocation = CLLocation (latitude: 21.361888 , longitude: -158.055725)
 
@@ -28,6 +29,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
  
         //this function centers the map around the CLLocation by setting the coordinate region and set the region of the map
+        
+        self.navigationItem.title = "Eatery Locations"
+        
         func centerMapOnLocation(location: CLLocation) {
             let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
             mapView.setRegion(coordinateRegion, animated: true)
