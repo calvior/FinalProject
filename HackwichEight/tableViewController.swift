@@ -9,7 +9,9 @@
 import UIKit
 
 class tableViewController: UIViewController {
-
+    
+    let myResturants: [String] = ["Buba Gump", "Sorabol", "Moku Kitchen", "Marukame Udon", "Poke & Box", "Forty Carrots"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
             self.navigationItem.title = "Eateries"
