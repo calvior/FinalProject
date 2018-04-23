@@ -28,30 +28,29 @@
                     </view>
                     <navigationItem key="navigationItem" id="Jg7-Of-N1O"/>
                     <connections>
-                        <outlet property="mapTitleOne" destination="Jg7-Of-N1O" id="JbH-F5-3zS"/>
-                        <outlet property="mapView" destination="azc-VJ-jvn" id="1kg-c4-CYY"/>
+                        <outlet property="mapView" destination="azc-VJ-jvn" id="Bud-uk-3Gv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966" y="367"/>
+            <point key="canvasLocation" x="965.625" y="366.54929577464787"/>
         </scene>
         <!--Eats-->
         <scene sceneID="w5E-OB-wMK">
             <objects>
                 <navigationController title="Eats" id="uTk-RU-lbK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Eats" id="HJb-RN-TC8"/>
+                    <tabBarItem key="tabBarItem" title="Eats" selectedImage="restaurant" id="HJb-RN-TC8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dr8-3K-FpQ">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Ky0-2D-Ole" kind="relationship" relationship="rootViewController" id="gvb-X2-rzY"/>
+                        <segue destination="Ky0-2D-Ole" kind="relationship" relationship="rootViewController" id="NAt-0k-HLC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wi-xv-tZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261" y="-319"/>
+            <point key="canvasLocation" x="133" y="-501"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="5Eb-7f-ES2">
@@ -65,17 +64,34 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseidentifier" id="3hc-IP-wIp">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3hc-IP-wIp" id="Uvh-Mv-7hD">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ky0-2D-Ole" id="VxY-7s-QoC"/>
+                                    <outlet property="delegate" destination="Ky0-2D-Ole" id="ibc-8t-aSo"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="vx4-Ck-25g"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="dsv-YL-4C2"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" selectedImage="restaurant" id="dsv-YL-4C2"/>
                     <navigationItem key="navigationItem" id="glH-o6-0Fl"/>
+                    <connections>
+                        <outlet property="tableView" destination="1NR-o3-H2H" id="xmP-51-0Fu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0b-om-9K9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965.625" y="-319.01408450704224"/>
+            <point key="canvasLocation" x="994" y="-502"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MMj-RP-uMw">
@@ -87,7 +103,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="uTk-RU-lbK" kind="relationship" relationship="viewControllers" id="4tz-8C-MeH"/>
+                        <segue destination="uTk-RU-lbK" kind="relationship" relationship="viewControllers" id="6rk-ei-iEI"/>
                         <segue destination="25t-EP-Y1a" kind="relationship" relationship="viewControllers" id="IT9-dD-JRO"/>
                     </connections>
                 </tabBarController>
@@ -99,7 +115,7 @@
         <scene sceneID="0Qx-9d-h8s">
             <objects>
                 <navigationController title="Map" automaticallyAdjustsScrollViewInsets="NO" id="25t-EP-Y1a" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="PlF-wd-k10"/>
+                    <tabBarItem key="tabBarItem" title="Map" selectedImage="map_marker" id="PlF-wd-k10"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sfK-FM-A35">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -115,4 +131,8 @@
             <point key="canvasLocation" x="261" y="367"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map_marker" width="30" height="30"/>
+        <image name="restaurant" width="30" height="30"/>
+    </resources>
 </document>
