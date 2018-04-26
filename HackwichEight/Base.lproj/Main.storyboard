@@ -55,7 +55,7 @@
         <!--Item 1-->
         <scene sceneID="5Eb-7f-ES2">
             <objects>
-                <viewController id="Ky0-2D-Ole" customClass="ViewController" customModule="HackwichEight" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ky0-2D-Ole" customClass="tableViewController" customModule="HackwichEight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cbr-hW-xfm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,7 +65,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseidentifier" id="3hc-IP-wIp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" id="3hc-IP-wIp">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3hc-IP-wIp" id="Uvh-Mv-7hD">
@@ -86,7 +86,7 @@
                     <tabBarItem key="tabBarItem" title="Item 1" selectedImage="restaurant" id="dsv-YL-4C2"/>
                     <navigationItem key="navigationItem" id="glH-o6-0Fl"/>
                     <connections>
-                        <outlet property="tableView" destination="1NR-o3-H2H" id="xmP-51-0Fu"/>
+                        <outlet property="tableView" destination="1NR-o3-H2H" id="lrd-lD-ppc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0b-om-9K9" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -11,10 +11,15 @@ import UIKit
 class tableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let myResturants: [String] = ["Buba Gump", "Sorabol", "Moku Kitchen", "Marukame Udon", "Murphy's Bar & Grill", "Downbeat"]
+   
+
+    @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
             self.navigationItem.title = "Town Eateries"
+        
+            self.tableView.dataSource = self
         
         // Do any additional setup after loading the view.
     }
@@ -35,7 +40,7 @@ class tableViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
         UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier:"cellReuseidentifier")!
+            let cell = tableView.dequeueReusableCell(withIdentifier:"cellReuseIdentifier")!
             let text = myResturants[indexPath.row]
             cell.textLabel?.text = text
             return cell
