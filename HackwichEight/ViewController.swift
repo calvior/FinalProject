@@ -13,7 +13,7 @@ import CoreLocation
 class ViewController: UIViewController {
 
 
-    
+    //created outlet 
     @IBOutlet weak var mapView: MKMapView!
     
     
