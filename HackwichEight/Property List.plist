@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>resturantTitles</key>
+	<array>
+		<string>Downbeat</string>
+		<string>Murphy&apos;s Bar &amp; Grill</string>
+		<string>Marukame Udon</string>
+		<string>Moku Kitchen</string>
+		<string>Sorabol</string>
+		<string>Buba Gump</string>
+	</array>
+	<key>resturantDescriptions</key>
+	<array>
+		<string>An award-winning Korean Food option, the Sorabol Korean Restaurant is conveniently located across the street from Walmart on Keeaumoku St, and provides diners a truly exceptional menu filled with delicious Korean favorites. They are opened every day all day, and are a very popular spot for those winding down a night of revelry. </string>
+		<string>FOOD IS THE HERO AT THE BUBBA GUMP SHRIMP CO., WE SERVE FOOD THAT MAKES OUR EMPLOYEES PROUD AND WILL MAKE YOU WANT TO RETURN. OUR Menu FEATURES SHRIMP, OF COURSE. ONCE YOU&apos;VE HAD ONE OF OUR MARGARITAS HAND-SHAKEN AT YOUR TABLE, YOU&apos;RE SURE TO BE A FAN.</string>
+	</array>
 	<key>restaurantImages</key>
 	<array>
 		<string>downbeat</string>
