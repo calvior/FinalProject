@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		47F3503A20907EF0004CB4EF /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47F3503920907EF0004CB4EF /* Property List.plist */; };
+		47F3503C20925DB4004CB4EF /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F3503B20925DB4004CB4EF /* detailViewController.swift */; };
 		7FAA18832072BFDC0041BAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAA18822072BFDC0041BAE6 /* AppDelegate.swift */; };
 		7FAA18852072BFDC0041BAE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAA18842072BFDC0041BAE6 /* ViewController.swift */; };
 		7FAA18882072BFDC0041BAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAA18862072BFDC0041BAE6 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		47F3503920907EF0004CB4EF /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		47F3503B20925DB4004CB4EF /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		7FAA187F2072BFDC0041BAE6 /* HackwichEight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackwichEight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAA18822072BFDC0041BAE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FAA18842072BFDC0041BAE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				7FAA18822072BFDC0041BAE6 /* AppDelegate.swift */,
 				7FAA18842072BFDC0041BAE6 /* ViewController.swift */,
 				7FAA18862072BFDC0041BAE6 /* Main.storyboard */,
+				47F3503B20925DB4004CB4EF /* detailViewController.swift */,
 				47F3503920907EF0004CB4EF /* Property List.plist */,
 				7FBA0C7C207C088700BC1BDC /* tableViewController.swift */,
 				7FAA18942072C5020041BAE6 /* Resturant.swift */,
@@ -149,6 +152,7 @@
 				7FAA18852072BFDC0041BAE6 /* ViewController.swift in Sources */,
 				7FAA18832072BFDC0041BAE6 /* AppDelegate.swift in Sources */,
 				7FAA18952072C5020041BAE6 /* Resturant.swift in Sources */,
+				47F3503C20925DB4004CB4EF /* detailViewController.swift in Sources */,
 				7FBA0C7D207C088700BC1BDC /* tableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
