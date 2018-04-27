@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="azc-VJ-jvn">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
@@ -52,7 +52,7 @@
             </objects>
             <point key="canvasLocation" x="133" y="-501"/>
         </scene>
-        <!--Item 1-->
+        <!--Eats-->
         <scene sceneID="5Eb-7f-ES2">
             <objects>
                 <viewController id="Ky0-2D-Ole" customClass="tableViewController" customModule="HackwichEight" customModuleProvider="target" sceneMemberID="viewController">
@@ -86,7 +86,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="vx4-Ck-25g"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" selectedImage="restaurant" id="dsv-YL-4C2"/>
+                    <tabBarItem key="tabBarItem" title="Eats" image="restaurant" selectedImage="restaurant" id="dsv-YL-4C2"/>
                     <navigationItem key="navigationItem" id="glH-o6-0Fl"/>
                     <connections>
                         <outlet property="tableView" destination="1NR-o3-H2H" id="lrd-lD-ppc"/>
@@ -142,7 +142,7 @@
         <scene sceneID="0Qx-9d-h8s">
             <objects>
                 <navigationController title="Map" automaticallyAdjustsScrollViewInsets="NO" id="25t-EP-Y1a" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" selectedImage="map_marker" id="PlF-wd-k10"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map_marker" selectedImage="map_marker" id="PlF-wd-k10"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sfK-FM-A35">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
